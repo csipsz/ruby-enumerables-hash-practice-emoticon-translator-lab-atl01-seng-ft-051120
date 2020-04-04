@@ -11,7 +11,7 @@ end
 def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
   my_hash.each do |key, value|
-    bnding.pry
+    binding.pry
   if emoticon == key
     emoticon = value
   end

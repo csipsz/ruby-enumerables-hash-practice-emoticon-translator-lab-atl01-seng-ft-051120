@@ -11,6 +11,7 @@ end
 def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
   my_hash.each do |name, hash|
+    binding.pry
     hash[name] = ["english" => value[0], "japanese" => value[1]] 
   end
 end

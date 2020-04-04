@@ -10,7 +10,9 @@ end
 
 def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
-  
+  my_hash.each do |key, value|
+  if emoticon = key
+  end
 end
 
 

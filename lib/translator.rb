@@ -11,8 +11,12 @@ end
 def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
   my_hash.each do |key, value|
-  if emoticon = key
+    bnding.pry
+  if emoticon == key
+    emoticon = value
   end
+  puts "We do not have your emoticon in our library"
+end
 end
 
 

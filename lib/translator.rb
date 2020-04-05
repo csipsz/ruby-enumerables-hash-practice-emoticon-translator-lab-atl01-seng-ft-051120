@@ -12,15 +12,7 @@ def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
   array = []
   my_hash.each do |key, innerHash|
-   innerHash.each do |symbol, value|
-    array.push(key, symbol, value)
-    end
-   end
-   if array.include?(emoticon)
-     binding.pry
-    emoticon = array[0]
-  end
-  return "We don't have your emoji in our database"
+end
 end
 
 

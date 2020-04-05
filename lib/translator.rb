@@ -12,7 +12,7 @@ def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
   array = []
   my_hash.each do |key, innerHash|
-end
+  end
 end
 
 

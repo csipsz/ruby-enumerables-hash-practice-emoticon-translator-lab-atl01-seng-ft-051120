@@ -12,7 +12,7 @@ def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
   my_hash.each do |key, value|
     binding.pry
-  if emoticon == value 
+  if emoticon == value.has
     emoticon = value
   end
   puts "We do not have your emoticon in our library"

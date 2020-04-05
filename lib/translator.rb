@@ -13,9 +13,9 @@ def get_english_meaning(file_path, emoticon)
   array = []
   my_hash.each do |key, innerHash|
    innerHash.each do |symbol, value|
-     binding.pry
      array.push(key, symbol, value)
    end
+   
    if array.include?(emoticon)
      return array[0]
    else 

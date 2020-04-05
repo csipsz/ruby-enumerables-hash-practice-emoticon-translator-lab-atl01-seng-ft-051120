@@ -22,6 +22,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   my_emojis = load_library(file_path)
+  
   my_emojis.each do |key, innerHash|
     if key == emoticon
       return innerHash[1]

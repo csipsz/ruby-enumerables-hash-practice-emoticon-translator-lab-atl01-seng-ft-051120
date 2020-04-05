@@ -10,14 +10,14 @@ end
 
 def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
-  
+  sorry_message = "Sorry, that emoticon was not found"
   my_hash.each do |key, innerHash|
     if innerHash.has_value?(emoticon) == true
       #binding.pry
       return key
     end
   end
-  return "Sorry, we don't have your emoji"
+  return sorry_message
 end
 
 

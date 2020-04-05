@@ -16,7 +16,7 @@ def get_english_meaning(file_path, emoticon)
       return key
     end
   end
-  puts "Sorry, we don't have your emoji"
+  return "Sorry, we don't have your emoji"
 end
 
 

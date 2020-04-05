@@ -28,6 +28,7 @@ def get_japanese_emoticon(file_path, emoticon)
       return innerHash[1]
     end
   end
+  binding.pry
   return sorry_message
 end
 

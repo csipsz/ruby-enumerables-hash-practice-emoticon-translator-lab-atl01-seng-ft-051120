@@ -12,7 +12,8 @@ def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
   array = []
   my_hash.each do |key, innerHash|
-    innerHash.has_value?(emoticon)
+    if innerHash.has_value?(emoticon) == true
+      emoticon = key
     binding.pry
   end
 end

@@ -22,6 +22,7 @@ def get_english_meaning(file_path, emoticon)
      puts "We don't have your emoji in our database"
   end
 end
+end
 
 
 def get_japanese_emoticon(file_path, emoticon)

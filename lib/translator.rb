@@ -11,11 +11,12 @@ end
 def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
   array = []
-  my_hash.each do |key, value|
-    binding.pry
-    array.push(key, value)
-end
-return array
+  my_hash.each do |key, innerHash|
+   innerHash.each do |symbol, value|
+     array.push(key, symbol, value)
+   end
+  end
+  return array
 end
 
 

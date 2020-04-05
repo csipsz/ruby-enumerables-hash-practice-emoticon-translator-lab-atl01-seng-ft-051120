@@ -25,11 +25,10 @@ def get_japanese_emoticon(file_path, emoticon)
   sorry_message = "Sorry, that emoticon was not found"
   my_emojis.each do |key, innerHash|
     if key == emoticon
-      
+      binding.pry
       return innerHash[1]
     end
   end
-  
   return sorry_message
 end
 

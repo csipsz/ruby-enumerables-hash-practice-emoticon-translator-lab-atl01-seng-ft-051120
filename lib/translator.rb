@@ -16,7 +16,10 @@ def get_english_meaning(file_path, emoticon)
      binding.pry
      array.push(key, symbol, value)
    end
-   
+   if array.include?(emoticon)
+     return array[0]
+   else 
+     puts "We don't have your emoji in our database"
   end
 end
 

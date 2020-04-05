@@ -26,7 +26,7 @@ def get_japanese_emoticon(file_path, emoticon)
   my_emojis.each do |key, innerHash|
     binding.pry
     if innerHash[:english] == emoticon
-      return innerHash[1]
+      return innerHash[:japanese]
     end
   end
   return sorry_message

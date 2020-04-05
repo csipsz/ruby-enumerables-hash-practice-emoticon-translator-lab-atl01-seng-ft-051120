@@ -13,6 +13,7 @@ def get_english_meaning(file_path, emoticon)
   array = []
   my_hash.each do |key, innerHash|
    innerHash.each do |symbol, value|
+     binding.pry
      array.push(key, symbol, value)
    end
   end

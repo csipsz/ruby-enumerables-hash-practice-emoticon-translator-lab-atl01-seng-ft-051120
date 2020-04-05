@@ -16,6 +16,7 @@ def get_english_meaning(file_path, emoticon)
      array.push(key, symbol, value)
       if array.include?(emoticon)
      return array[0]
+   end
    else 
      return "We don't have your emoji in our database"
   end
